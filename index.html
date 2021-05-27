@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baking classes</title>
+</head>
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url(img/bg.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .left {
+        position: absolute;
+        left: 23px;
+        top: 20px;
+        display: inline-block;
+        width: 200px;
+        
+    }
+
+    .left img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 34%;
+    }
+
+    .left div {
+        font-family: cursive;
+        text-align: center;
+        font-size: 17px;
+    }
+
+    .mid {
+        display: block;
+        margin: 20px auto;
+        width: 600px;
+        border: 4px solid orange;
+        border-radius: 20px;
+    }
+
+    .right {
+        position: absolute;
+        top: 33px;
+        right: 23px;
+        display: inline-block;
+        
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        font-size: 20px;
+        list-style: none;
+        display: inline-block;
+    }
+
+    .navbar li a {
+        font-family: cursive;
+        text-decoration: none;
+        color: black;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover {
+        color: rgb(150, 25, 150);
+    }
+
+    .btn {
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 4px 14px;
+        border-radius: 10px;
+        border: 1px solid grey;
+        font-family: cursive;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        color: rgb(150, 25, 150);
+    }
+
+    .container {
+        position: absolute;
+        right: 3px;
+        border: 2px solid orange;
+        margin: 49px 38px;
+        width: 33%;
+        padding: 12px 35px;
+        display: block;
+        border-radius: 28px;
+        font-family: cursive;
+        background-color: #ffc107
+    }
+
+    .formgroup input {
+        text-align: center;
+        display: block;
+        width: 365px;
+        padding: 11px;
+        border: 2px solid black;
+        margin: 4px auto;
+        border-radius: 20px;
+        font-family: cursive;
+    }
+
+    .container h3 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 52%;
+        margin: 7px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/icon2.png" alt="">
+            <div>
+                Cake n Bake
+            </div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="https://www.google.co.in/">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us Now!</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h3> Join our class and make delicious goodies!</h3>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" name="NAME" placeholder="Enter your Name">
+            </div>
+            <div class="formgroup">
+                <input type="number" name="NAME" placeholder="Enter your Age">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="NAME" placeholder="Enter your Address">
+            </div>
+            <div class="formgroup">
+                <input type="tel" name="NAME" placeholder="Enter your Phone number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
